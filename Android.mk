@@ -4,7 +4,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter RM6785,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),RM6785)
 
 $(call add-radio-file-sha1-checked,radio/audio_dsp.img,2d87067c80e59eb7c628fb227a11e7fb28d7d5ff)
 $(call add-radio-file-sha1-checked,radio/cam_vpu1.img,8e4a8148966803847444f93c4ddcd2068e495382)
