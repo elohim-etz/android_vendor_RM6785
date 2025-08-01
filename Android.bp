@@ -10474,23 +10474,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libakm",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libakm.so"],
-			shared_libs: ["liblog", "libutils", "libstagefright_foundation", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libapusys",
 	owner: "realme",
 	strip: {
@@ -14165,23 +14148,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.atci@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.atci@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.camera.atms@1.0",
 	owner: "realme",
 	strip: {
@@ -14479,23 +14445,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.mdmonitor@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so"],
 			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -15228,40 +15177,6 @@ prebuilt_etc_xml {
 }
 
 cc_prebuilt_binary {
-	name: "atcid",
-	owner: "realme",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/atcid"],
-			shared_libs: ["libmtkcutils", "libmtkutils", "libmtkrillog", "libmtkproperty", "vendor.mediatek.hardware.atci@1.0", "libhidlbase", "libhidltransport", "libhwbinder", "libnvram", "libfile_op", "libwifitest", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "audiocmdservice_atci",
-	owner: "realme",
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/bin/audiocmdservice_atci"],
-			shared_libs: ["libcutils", "libutils", "libbinder", "liblog", "libaudiocompensationfilter_vendor", "libaudioprimarydevicehalifclient", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "autobt",
 	owner: "realme",
 	target: {
@@ -15969,40 +15884,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/mcDriverDaemon"],
 			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "md_monitor",
-	owner: "realme",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/md_monitor"],
-			shared_libs: ["libc++", "liblog", "libccci_util", "libselinux", "libcutils", "vendor.mediatek.hardware.mdmonitor@1.0", "libhidlbase", "libhidltransport", "libutils", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "md_monitor_ctrl",
-	owner: "realme",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/md_monitor_ctrl"],
-			shared_libs: ["libc++", "liblog", "libutils", "libcutils", "vendor.mediatek.hardware.mdmonitor@1.0", "libhwbinder", "libhidlbase", "libhidltransport", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
