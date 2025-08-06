@@ -1064,6 +1064,7 @@ PRODUCT_PACKAGES += \
     lib_bsscore \
     libaal_cust \
     libaal_key \
+    libakm \
     libapusys \
     libarcsoft_distortion_correction \
     libarcsoft_dualcam_bokeh_api \
