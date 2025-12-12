@@ -319,9 +319,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/ipsec/ssl/openssl.cnf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ssl/openssl.cnf \
     vendor/realme/RM6785/proprietary/vendor/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/strongswan.conf \
     vendor/realme/RM6785/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/realme/RM6785/proprietary/vendor/etc/media_codecs_mediatek_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_audio.xml \
-    vendor/realme/RM6785/proprietary/vendor/etc/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_video.xml \
-    vendor/realme/RM6785/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/realme/RM6785/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/realme/RM6785/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
