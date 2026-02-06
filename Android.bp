@@ -554,64 +554,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.nvram@1.1-impl",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libutils",
-                "libnvram",
-                "libfile_op",
-                "vendor.mediatek.hardware.nvram@1.0",
-                "vendor.mediatek.hardware.nvram@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libutils",
-                "libnvram",
-                "libfile_op",
-                "vendor.mediatek.hardware.nvram@1.0",
-                "vendor.mediatek.hardware.nvram@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.pq@2.6-impl",
     owner: "realme",
     strip: {
@@ -3758,94 +3700,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.nvram@1.0",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.nvram@1.1",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.nvram@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.nvram@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.pq@2.0",
     owner: "realme",
     strip: {
@@ -6819,6 +6673,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/hwcomposer.mt6785.so",
             ],
             shared_libs: [
+                "libprocessgroup_shim",
                 "libui",
                 "libutils",
                 "libcutils",
@@ -6971,6 +6826,44 @@ cc_prebuilt_library_shared {
                 "libhwm",
                 "libhwm-oppo",
                 "libaedv",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.bluetooth.audio@2.1-impl",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "libbase",
+                "libbluetooth_audio_session_mediatek",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libhardware",
+                "android.hardware.audio@6.0",
+                "android.hardware.audio.common@6.0",
+                "android.hardware.audio.common@6.0-util",
+                "vendor.mediatek.hardware.audio@6.1",
                 "libc++",
                 "libc",
                 "libm",
@@ -7236,6 +7129,42 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "vendor.mediatek.hardware.keymaster_attestation@1.0",
                 "vendor.mediatek.hardware.keymaster_attestation@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.nvram@1.1-impl",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "libnvram",
+                "libfile_op",
+                "vendor.mediatek.hardware.nvram@1.0",
+                "vendor.mediatek.hardware.nvram@1.1",
                 "libc++",
                 "libc",
                 "libm",
@@ -23110,7 +23039,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwifi-hal-mtk",
+    name: "libwapi",
     owner: "realme",
     strip: {
         none: true,
@@ -23118,14 +23047,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libwifi-hal-mtk.so",
+                "proprietary/vendor/lib64/libwapi.so",
             ],
             shared_libs: [
-                "libbase",
-                "libcutils",
+                "libkeystore-wifi-hidl",
+                "libcrypto",
                 "liblog",
-                "libnl",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -24580,6 +24507,63 @@ cc_prebuilt_library_shared {
                 "android.hardware.radio@1.4",
                 "android.hardware.radio@1.5",
                 "android.hidl.safe_union@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.nvram@1.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.nvram@1.1",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.nvram@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
