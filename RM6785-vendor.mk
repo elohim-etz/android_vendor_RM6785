@@ -249,10 +249,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-mediatek.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service-mediatek.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
@@ -281,7 +279,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
@@ -289,7 +286,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.keyinstall@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keyinstall@1.0-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
@@ -325,7 +321,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
-    vendor/realme/RM6785/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/realme/RM6785/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/realme/RM6785/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
@@ -340,13 +335,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/realme/RM6785/proprietary/vendor/firmware/WIFI_RAM_CODE_soc1_0_2a_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc1_0_2a_1.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/WMT_SOC.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC.cfg \
-    vendor/realme/RM6785/proprietary/vendor/firmware/catcher_filter_1_ulwctg_n.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/catcher_filter_1_ulwctg_n.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/customfilter/catcher_filter_1_ulwctg_n_FullLog.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/customfilter/catcher_filter_1_ulwctg_n_FullLog.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/customfilter/catcher_filter_1_ulwctg_n_PLS_PS_ONLY.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/customfilter/catcher_filter_1_ulwctg_n_PLS_PS_ONLY.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/customfilter/catcher_filter_1_ulwctg_n_SlimLog_DspAllOff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/customfilter/catcher_filter_1_ulwctg_n_SlimLog_DspAllOff.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/customfilter/catcher_filter_1_ulwctg_n__Default.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/customfilter/catcher_filter_1_ulwctg_n__Default.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/customfilter/catcher_filter_1_ulwctg_n_meta.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/customfilter/catcher_filter_1_ulwctg_n_meta.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/em_filter_1_ulwctg_n.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/em_filter_1_ulwctg_n.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
     vendor/realme/RM6785/proprietary/vendor/firmware/gt1151_default_firmware2.img:$(TARGET_COPY_OUT_VENDOR)/firmware/gt1151_default_firmware2.img \
     vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_cfg_6785v96.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_6785v96.bin \
@@ -455,8 +443,6 @@ PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
     VP9SecureVdecCA \
     audio.primary.mt6785 \
-    audio.r_submix.mt6785 \
-    audio.usb.mt6785 \
     sound_trigger.primary.mt6785 \
     vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
     libDR \
@@ -1143,7 +1129,6 @@ PRODUCT_PACKAGES += \
     libtlcWidevineModularDrm \
     libudf \
     libutils-v30 \
-    libwapi \
     libwifitest \
     libwvhidl \
     libwvdrmengine \
@@ -1178,11 +1163,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.dfps@1.0 \
-    vendor.mediatek.hardware.dplanner@2.0 \
-    vendor.mediatek.hardware.engineermode@1.0 \
-    vendor.mediatek.hardware.engineermode@1.1 \
-    vendor.mediatek.hardware.engineermode@1.2 \
-    vendor.mediatek.hardware.engineermode@1.3 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
     vendor.mediatek.hardware.lbs@1.0 \
@@ -1196,7 +1176,6 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
-    libem_support_jni \
     libcomutils \
     libimsma \
     libimsma_adapt \
@@ -1223,7 +1202,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.radio@1.0 \
     ImsService \
-    EngineerMode \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -1239,19 +1217,12 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     oplus_appradio_device_manifest.xml \
     oplus_radio_device_manifest.xml \
-    vendor.mediatek.hardware.dplanner@2.0-service.xml \
     autobt \
     bip \
     ccci_fsd \
     ccci_mdinit \
     ccci_rpcd \
     charon \
-    dconfig \
-    dexecutor \
-    doeapp-memtester \
-    doeapp-sat \
-    dtc_vendor \
-    em_hidl \
     epdg_wod \
     fuelgauged \
     fuelgauged_nvram \
@@ -1261,11 +1232,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.keymaster@4.0-service.trustonic \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
-    android.hardware.sensors@2.0-service-mediatek \
     camerahalserver \
     mtkfusionrild \
     vendor.mediatek.hardware.dfps@1.0-service \
-    vendor.mediatek.hardware.dplanner@2.0-service \
     vendor.mediatek.hardware.gpu@1.0-service \
     vendor.mediatek.hardware.keyinstall@1.0-service \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
@@ -1281,7 +1250,6 @@ PRODUCT_PACKAGES += \
     mcDriverDaemon \
     mnld \
     mtk_agpsd \
-    muxreport \
     netdagent \
     nvram_daemon \
     ppl_agent \
