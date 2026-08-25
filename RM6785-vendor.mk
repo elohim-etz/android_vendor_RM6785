@@ -356,7 +356,6 @@ PRODUCT_PACKAGES += \
     libTEECommon \
     libaal_mtk \
     libaalservice \
-    libaedv \
     libbwc \
     libcapctrl \
     libcares_naptr \
@@ -527,7 +526,6 @@ PRODUCT_PACKAGES += \
     libMcGatekeeper \
     libSoftGatekeeper \
     sensors.mt6785 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
     vendor.mediatek.hardware.camera.isphal@1.0-impl \
@@ -1191,8 +1189,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.radio@1.0 \
     ImsService \
-    mediatek-common \
-    mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-ims-extension-plugin \

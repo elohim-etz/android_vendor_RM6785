@@ -6,6 +6,7 @@ soong_namespace {
     imports: [
         "device/realme/RM6785",
         "hardware/mediatek",
+        "hardware/mediatek/libaedv",
         "hardware/mediatek/libmtkperf_client",
     ],
 }
@@ -840,51 +841,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaedv",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaedv.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libunwindstack",
-                "liblog",
-                "libz",
-                "libc",
-                "libdl",
-                "libm",
-                "libc++",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaedv.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libunwindstack",
-                "liblog",
-                "libz",
-                "libc",
-                "libdl",
-                "libm",
-                "libc++",
             ],
         },
     },
@@ -4417,10 +4373,34 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libMtkOmxVdecEx.so",
             ],
+            shared_libs: [
+                "libui_shim",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libui",
+                "libion",
+                "libged",
+                "libion_mtk",
+                "libsync",
+                "android.hardware.graphics.common@1.2",
+                "libdpframework",
+                "libgralloc_extra",
+                "libvcodecdrv",
+                "libvcodec_utility",
+                "libhardware",
+                "vendor.mediatek.hardware.pq@2.5",
+                "libbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -5185,10 +5165,20 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libh264enc_sa.ca7.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libvcodec_oal",
+                "libvcodec_utility",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -5456,10 +5446,19 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libmp4enc_sa.ca7.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libvcodec_utility",
+                "libvcodec_oal",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -5475,10 +5474,19 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libmp4enc_xa.ca7.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libvcodec_utility",
+                "libvcodec_oal",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -5771,10 +5779,16 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libthha.so",
             ],
+            shared_libs: [
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+                "liblog",
+            ],
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -5790,10 +5804,19 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libvc1dec_sa.ca7.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libvcodec_oal",
+                "libvcodec_utility",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -5809,10 +5832,15 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libvcodec_oal.so",
             ],
+            shared_libs: [
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -6080,10 +6108,17 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libvp8dec_sa.ca7.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libvcodec_oal",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -6118,10 +6153,20 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libvp9dec_sa.ca7.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libvcodec_oal",
+                "libpowerhalwrap_vendor",
+                "libthha",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -6716,44 +6761,6 @@ cc_prebuilt_library_shared {
                 "libhwm",
                 "libhwm-oppo",
                 "libaedv",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.1-impl",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libbluetooth_audio_session_mediatek",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libhardware",
-                "android.hardware.audio@6.0",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util",
-                "vendor.mediatek.hardware.audio@6.1",
                 "libc++",
                 "libc",
                 "libm",
@@ -25286,22 +25293,6 @@ android_app_import {
         enabled: false,
     },
     privileged: true,
-}
-
-dex_import {
-    name: "mediatek-common",
-    owner: "realme",
-    jars: [
-        "proprietary/system/framework/mediatek-common.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-framework",
-    owner: "realme",
-    jars: [
-        "proprietary/system/framework/mediatek-framework.jar",
-    ],
 }
 
 dex_import {
